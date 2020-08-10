@@ -1,0 +1,17 @@
+t=int(input())
+for i in range(t):
+    n1=map(int,input().split())
+    x= list(map(int,input().split()))
+    a=len(x)
+    flag=0
+    for i in range(0,a):
+        z = x.count(x[i])
+        if z> 1:
+            print(i+1)
+            flag=1
+            break
+
+        else:
+            continue
+    if flag==0:
+        print(-1)
